@@ -1,0 +1,20 @@
+.card_pokemon {
+    width: 19em;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #E33D33;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.card_pokemon a {
+    text-decoration: none;
+    color: #E33D33;
+    text-align: center;
+    display: block;
+}
+
+.card_pokemon a:hover {
+    color: #600;
+    /* text-decoration: underline; */
+}
