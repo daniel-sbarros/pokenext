@@ -1,0 +1,31 @@
+.poke_container {
+    width: 25em;
+    margin: 10vh auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.poke_title {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.poke_type div {
+    display: flex;
+    justify-content: center;
+}
+
+.poke_type div span {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px 15px;
+    margin-right: 0.5em;
+    text-transform: capitalize;
+}
+
+
+

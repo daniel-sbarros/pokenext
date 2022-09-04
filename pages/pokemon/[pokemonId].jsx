@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
+import styles from '../../styles/Pokemon.module.css'
 
 export const getStaticPaths = async () => {
     const maxPokemons = 251
@@ -40,33 +41,32 @@ export default function Pokemon({ pokemon }) {
         return <div>Carregando...</div>
     }
 
-
     return (
-        <div>
-            <h3>{pokemon.name.toUpperCase()}</h3>
+        <div className={styles.poke_container}>
+            <h1 className={styles.poke_title}>{pokemon.name.toUpperCase()}</h1>
             <Image
                 src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
                 width='200' height='200' alt={pokemon.name}
             />
-            <div>
+            <div className={styles.poke_num}>
                 <h3>Número:</h3>
                 <p>#{pokemon.id}</p>
             </div>
-            <div>
+            <div className={styles.poke_type}>
                 <h4>Tipo:</h4>
                 <div>
                     {pokemon.types.map((item, index) => (
-                        <p key={index}>{item.type.name}</p>
+                        <span key={index}>{item.type.name}</span>
                     ))}
                 </div>
             </div>
-            <div>
+            <div className={styles.poke_alt}>
                 <h4>Altura:</h4>
                 <p>
                     {pokemon.height * 10} cm
                 </p>
             </div>
-            <div>
+            <div className={styles.poke_peso}>
                 <h4>Peso:</h4>
                 <p>
                     {pokemon.weight / 10} kg

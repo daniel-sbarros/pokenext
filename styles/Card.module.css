@@ -1,10 +1,16 @@
 .card_pokemon {
     width: 19em;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0.1em 0.1em 10px rgba(0, 0, 0, 0.5);
+    background-color: #333;
     color: #E33D33;
-    padding: 5px;
+    padding: 0px;
     transition: 0.5s;
+    margin: 0.2em;
+}
+
+.card_pokemon img {
+    height: 10em;
 }
 
 .card_pokemon a {
@@ -15,6 +21,8 @@
 }
 
 .card_pokemon a:hover {
-    color: #600;
+    color: #333;
+    background-color: #E33D33;
+    border-radius: 5px;
     /* text-decoration: underline; */
 }
